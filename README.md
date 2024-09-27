@@ -7,7 +7,11 @@
 
 # Features
 
-* [Impermanence](https://github.com/nix-community/impermanence), [sops-nix](https://github.com/Mic92/sops-nix), key-based ssh authentication, different desktop environments per host.
+* [Impermanence](https://github.com/nix-community/impermanence)
+* [sops-nix](https://github.com/Mic92/sops-nix)
+* Key-based SSH authentication
+* Different desktop-environments per host
+* QEMU PCI passthrough with a single GPU
 
 # Modules
 
