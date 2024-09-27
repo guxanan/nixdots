@@ -3,7 +3,7 @@
 # Info
 
 * This is a work-in-progress configuration for a multi-host/user setup.
-* You won't be able to just take this and build it without making manual chanages in multiple parts, as I have my secrets and some other stuff private.
+* You won't be able to just take this and build it without making manual changes in multiple parts, as I have my secrets and some other stuff private.
 
 # Features
 
