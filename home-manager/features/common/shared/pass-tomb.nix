@@ -7,7 +7,7 @@
   ...
 }: {
   home.packages = let
-    pass-tomb-open = pkgs.writeScriptBin "pass-tomb-open" ''
+    pass-open = pkgs.writeScriptBin "pass-open" ''
       #!${pkgs.expect}/bin/expect -f
 
       # Make sure to wait for the prompt
@@ -29,7 +29,7 @@
       interact
     '';
 
-    pass-tomb-close = pkgs.writeScriptBin "pass-tomb-close" ''
+    pass-close = pkgs.writeScriptBin "pass-close" ''
       #!${pkgs.expect}/bin/expect -f
 
       # Make sure to wait for the prompt
@@ -50,5 +50,5 @@
       # Interact with the application
       interact
     '';
-  in [pass-tomb-open pass-tomb-close];
+  in [pass-open pass-close];
 }

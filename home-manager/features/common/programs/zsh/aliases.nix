@@ -29,9 +29,6 @@
 
       change-secrets = "pushd $HOME/NixOS; export SOPS_AGE_KEY=$(ssh-to-age -i $HOME/Resources/ssh/host/ssh_host_ed25519_key -private-key); sops nixos/secrets.yaml; popd";
       gpg-show = "gpg --list-keys --keyid-format=long --with-keygrip";
-
-      pass-open = "pass-tomb-open";
-      pass-close = "pass-tomb-close";
     };
   };
 }
