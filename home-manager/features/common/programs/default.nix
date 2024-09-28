@@ -4,8 +4,10 @@
   ...
 }: {
   imports = [
+    ./browserpass
     ./git
     ./obs-studio
+    ./password-store
     ./ssh
     ./thunderbird
     ./vscodium

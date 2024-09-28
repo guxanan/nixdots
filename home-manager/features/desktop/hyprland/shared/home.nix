@@ -8,7 +8,6 @@
     home.sessionVariables = {
       CLUTTER_BACKEND = "wayland";
       NIXOS_OZONE_WL = "1";
-      #SDL_VIDEODRIVER = "wayland";
 
       XDG_CURRENT_DESKTOP = "Hyprland";
       XDG_SESSION_DESKTOP = "Hyprland";

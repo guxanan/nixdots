@@ -64,7 +64,7 @@
 
       input = {
         kb_layout = "us,it,ro";
-        kb_options = "grp:win_ctrl_space_toggle";
+        kb_options = "grp:win_space_toggle";
         repeat_rate = 25;
         repeat_delay = 600;
         follow_mouse = 1;
