@@ -110,7 +110,24 @@
         "home-manager": "home-manager",
         "impermanence": "impermanence",
         "nixpkgs": "nixpkgs",
+        "secrets": "secrets",
         "sops-nix": "sops-nix"
+      }
+    },
+    "secrets": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1727528220,
+        "narHash": "sha256-t9u+PSetgW7kZQm51GZbT8rif9HKj6EFUQzRqeSync8=",
+        "ref": "053237331d176d15a01d9f0e5372c09f8b813370",
+        "rev": "053237331d176d15a01d9f0e5372c09f8b813370",
+        "revCount": 3,
+        "type": "git",
+        "url": "file:secrets"
+      },
+      "original": {
+        "type": "git",
+        "url": "file:secrets"
       }
     },
     "sops-nix": {

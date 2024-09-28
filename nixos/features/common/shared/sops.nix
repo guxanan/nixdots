@@ -10,7 +10,7 @@ in {
   imports = [inputs.sops-nix.nixosModules.sops];
 
   sops = {
-    defaultSopsFile = ../../../../secrets/common.yaml;
+    defaultSopsFile = "${inputs.secrets}/common.yaml";
     age.sshKeyPaths = map getKeyPath keys;
   };
 }

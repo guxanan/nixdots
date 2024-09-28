@@ -9,6 +9,6 @@
 
   sops = {
     age.sshKeyPaths = ["/home/guxanan/Resources/ssh/host/ssh_host_ed25519_key"];
-    defaultSopsFile = ../../../../secrets/common.yaml;
+    defaultSopsFile = "${inputs.secrets}/common.yaml";
   };
 }

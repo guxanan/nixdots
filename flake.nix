@@ -19,6 +19,11 @@
       url = "github:ezKEa/aagl-gtk-on-nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    secrets = {
+      url = "git+file:secrets";
+      flake = false;
+    };
   };
 
   outputs = {
