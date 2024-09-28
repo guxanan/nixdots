@@ -4,7 +4,7 @@
   ...
 }: {
   settings = {
-    desktop.hyprland.enable = true;
+    desktop.plasma.enable = true;
     hardware.gpu.amdgpu.enable = true;
   };
 }
