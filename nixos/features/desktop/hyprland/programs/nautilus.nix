@@ -5,11 +5,7 @@
   ...
 }: {
   config = lib.mkIf config.settings.desktop.hyprland.enable {
-    environment = {
-      systemPackages = [pkgs.nautilus];
-      #sessionVariables.NAUTILUS_4_EXTENSION_DIR = "${config.system.path}/lib/nautilus/extensions-4";
-      pathsToLink = ["/share/nautilus-python/extensions"];
-    };
+    environment.systemPackages = [pkgs.nautilus];
 
     programs.nautilus-open-any-terminal = {
       enable = true;
