@@ -14,7 +14,7 @@
       set timeout -1
 
       # Read the password from the file
-      set password [read [open "${config.sops.secrets.guxanan-pass-tomb-password.path}"]]
+      set password [exec gpg --quiet --decrypt ${config.home.sessionVariables.FLAKE}/secrets/guxanan/password]
 
       # Start the application (e.g., sudo command)
       spawn pass open -f
