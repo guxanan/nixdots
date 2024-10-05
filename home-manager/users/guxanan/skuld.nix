@@ -76,6 +76,4 @@
         ;
     };
   };
-
-  sops.secrets.guxanan-pass-tomb-password = {};
 }
