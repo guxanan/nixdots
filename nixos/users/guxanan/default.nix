@@ -17,8 +17,10 @@ in {
   };
 
   home-manager = {
-    sharedModules = [./settings.nix];
-    users.guxanan = import ../../../home-manager/users/guxanan/${config.networking.hostName}.nix;
+    users.guxanan.imports = [
+      ./settings.nix
+      ../../../home-manager/users/guxanan/${config.networking.hostName}.nix
+    ];
   };
 
   security.sudo = {
