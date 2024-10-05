@@ -10,5 +10,5 @@
     ./udev.nix
   ];
 
-  services.ollama.enable = false;
+  services.ollama.enable = true;
 }
