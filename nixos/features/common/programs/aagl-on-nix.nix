@@ -9,7 +9,7 @@
     anime-borb-launcher.enable = false;
     honkers-railway-launcher.enable = false;
     honkers-launcher.enable = false;
-    wavey-launcher.enable = true;
+    wavey-launcher.enable = false;
     sleepy-launcher.enable = true;
   };
 }
