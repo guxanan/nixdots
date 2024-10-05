@@ -4,7 +4,7 @@
   ...
 }: {
   settings = {
-    desktop.gnome.enable = true;
+    desktop.hyprland.enable = true;
     hardware.gpu.amdgpu.enable = true;
   };
 }
