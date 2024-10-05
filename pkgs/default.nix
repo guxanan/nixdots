@@ -1,8 +1,4 @@
 pkgs: rec {
-  # Common
-  customtkinter = pkgs.python3Packages.callPackage ./common/apps/customtkinter {};
-  koboldcpp = pkgs.callPackage ./common/apps/koboldcpp {inherit customtkinter;};
-
   # Common - Scripts
   audio-to-ogg = pkgs.callPackage ./common/scripts/audio-to-ogg.nix {};
   image-to-png = pkgs.callPackage ./common/scripts/image-to-png.nix {};

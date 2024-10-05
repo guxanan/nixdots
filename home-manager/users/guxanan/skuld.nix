@@ -30,6 +30,7 @@
         openmw
         webcord
         telegram-desktop
+        koboldcpp
         #-------Gaming - Wine----------
         
         winetricks
