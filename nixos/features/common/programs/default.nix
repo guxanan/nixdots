@@ -7,6 +7,7 @@
   imports = [
     ./aagl-on-nix.nix
     ./gamemode.nix
+    ./nix-ld.nix
     ./steam.nix
     ./wireshark.nix
   ];

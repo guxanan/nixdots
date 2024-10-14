@@ -4,6 +4,7 @@
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     impermanence.url = "github:nix-community/impermanence";
+    nix-alien.url = "github:thiagokokada/nix-alien";
 
     home-manager = {
       url = "github:nix-community/home-manager";

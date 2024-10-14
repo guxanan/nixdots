@@ -19,6 +19,12 @@
             libyaml
             vkbasalt
             ;
+
+          inherit
+            (p.gst_all_1)
+            gst-plugins-good
+            gst-plugins-bad
+            ;
         };
     };
   };

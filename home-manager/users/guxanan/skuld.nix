@@ -1,6 +1,7 @@
 {
   config,
   pkgs,
+  inputs,
   ...
 }: {
   imports = [
@@ -64,15 +65,22 @@
         ventoy-full
         #----------My Scripts-----------
         
+        audio-to-flac
         audio-to-ogg
         image-to-png
         ini-to-utf8
+        mid-to-wav
         unzip-jp
         ;
 
       inherit
         (pkgs.wineWowPackages)
         stagingFull
+        ;
+
+      inherit
+        (inputs.nix-alien.packages."x86_64-linux")
+        nix-alien
         ;
     };
   };

@@ -3,32 +3,26 @@
   writeShellApplication,
 }:
 writeShellApplication {
-  name = "audio-to-ogg";
+  name = "mid-to-wav";
   text = ''
     export LC_ALL="ja_JP.UTF-8"
 
-    # Convert MP3, WAV, WMA and FLAC to OGG
-    read -rp "Convert all audio files to OGG? (yes/no) > " response
+    # Convert MIDI to WAV
+    read -rp "Convert all MID files to WAV? (yes/no) > " response
     if [ "$response" = "yes" ]; then
       find . -type f \
-        \( -iname "*.[mM][pP]3" -o \
-          -iname "*.[wW][aA][vV]" -o \
-          -iname "*.[wW][mM][aA]" -o \
-          -iname "*.[fF][lL][aA][cC]" \) | \
+        \( -iname "*.[mM][iI][dD]" \) | \
       while read -r file; do
-        ffmpeg -nostdin -loglevel quiet -y -i "$file" \
-          -c:a libvorbis -q:a 6 "''${file%.*}.ogg"
-        echo "Converted: $file -> ''${file%.*}.ogg"
+        timidity "$file" \
+          -Ow -o "''${file%.*}.wav"
+        echo "Converted: $file -> ''${file%.*}.wav"
       done
 
       # Prompt for removing original files
       read -rp "Delete the original files? (yes/no) > " response
       if [ "$response" = "yes" ]; then
         find . -type f \
-          \( -iname "*.[mM][pP]3" -o \
-            -iname "*.[wW][aA][vV]" -o \
-            -iname "*.[wW][mM][aA]" -o \
-            -iname "*.[fF][lL][aA][cC]" \) | \
+          \( -iname "*.[mM][iI][dD]" \) | \
         while read -r file; do
           rm -- "$file"
           echo "Removed: $file"
